@@ -1,6 +1,6 @@
 {
     "name": "phil/mentions-bundle",
-    "description": "@mentions of members for Symfony: handles found in plain text and Markdown with a configurable pattern and in UJO (Universal JSON Output) documents, members resolved through the application's directory, only newly mentioned members who may see the content notified, a Twig filter linking mentions to profiles and a Stimulus autocomplete",
+    "description": "@mentions of members for Symfony: handles found in what people write, newly mentioned members allowed to see it notified, links to profiles and autocomplete.",
     "license": "MIT",
     "type": "symfony-bundle",
     "keywords": [
@@ -26,7 +26,7 @@
         "ext-mbstring": "*",
         "doctrine/dbal": "^4.5",
         "doctrine/orm": "^3.7",
-        "phil/notifications-bundle": "^0.1@dev",
+        "phil/notifications-bundle": "^0.1@dev || ^0.2@dev",
         "phil/resource": "^0.1@dev",
         "phil/ujo": "^0.1@dev",
         "psr/clock": "^1.0",
@@ -39,8 +39,8 @@
     "require-dev": {
         "doctrine/doctrine-bundle": "^3.3",
         "phil/block-editor-bundle": "^0.1@dev",
-        "phil/comments-bundle": "^0.1@dev || ^0.2@dev",
-        "phil/settings-bundle": "^0.1@dev",
+        "phil/comments-bundle": "^0.1@dev || ^0.2@dev || ^0.3@dev",
+        "phil/settings-bundle": "^0.1@dev || ^0.2@dev",
         "php-webdriver/webdriver": "^1.16",
         "phpunit/phpunit": "^13.4",
         "psr/log": "^3.0",
@@ -77,7 +77,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "0.1.x-dev"
+            "dev-main": "0.2.x-dev"
         }
     }
 }
