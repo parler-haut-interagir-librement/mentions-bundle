@@ -4,9 +4,22 @@ All notable changes to `phil/mentions-bundle` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## 0.2.1-alpha - 2026-11-24
+
+### Changed
+
+- Requires the latest minor of each dependency (`doctrine/orm` 3.8, `doctrine/dbal` 4.6, `phil/notifications-bundle`
+  0.4, `symfony/service-contracts` 3.8), and of each development requirement (`doctrine/doctrine-bundle` 3.4,
+  `twig/twig` 3.31).
+
+### Fixed
+
+- `phil/notifications-bundle` 0.3 and 0.4 are accepted beside 0.1 and 0.2: the package did not install beside the
+  version published on 2026-11-20, nor beside the next one.
+
 ## 0.2.0-alpha - 2026-11-18
 
-The next version is 0.2.0-alpha: subjects, members and authors of the mentions compare byte by byte on MySQL and
+Subjects, members and authors of the mentions compare byte by byte on MySQL and
 MariaDB. See [Upgrading from 0.1](doc/installation.md#upgrading-from-01).
 
 ### Added
